@@ -27,6 +27,7 @@ function displayBeanieBabies() {
         const imgEl = document.createElement('img');
         infoEl.textContent = `Name: ${beanieBaby.title}`;
         imgEl.src = beanieBaby.image;
+        beanieBabyEl.classList.add('beanie-baby');
 
         beanieBabyEl.append(infoEl, imgEl);
         beanieBabiesEl.append(beanieBabyEl);
