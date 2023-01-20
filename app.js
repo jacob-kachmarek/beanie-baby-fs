@@ -24,6 +24,13 @@ window.addEventListener('load', async () => {
     }
 });
 
+formEl.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const filteredBeanieBabies = await getBeanieBabies(selectEl.value);
+    beanieBabiesData = filteredBeanieBabies;
+    displayBeanieBabies();
+});
+
 /* Display Functions */
 function displayBeanieBabies() {
     beanieBabiesEl.textContent = '';
