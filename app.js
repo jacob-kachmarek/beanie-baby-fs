@@ -15,7 +15,13 @@ window.addEventListener('load', async () => {
     const beanie = await getBeanieBabies();
     beanieBabiesData = beanie;
     displayBeanieBabies();
-    const astro = await getAstroSign();
+    const astros = await getAstroSign();
+    for (let astro of astros) {
+        const option = document.createElement('option');
+        option.value = astro.name;
+        option.textContent = astro.name;
+        selectEl.append(option);
+    }
 });
 
 /* Display Functions */
