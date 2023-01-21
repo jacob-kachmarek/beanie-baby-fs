@@ -33,3 +33,24 @@ header .logo {
 main {
     padding: 20px;
 }
+
+.beanie-babies {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.beanie-baby {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    border-style: solid;
+    border-color: black;
+    width: 400px;
+    height: 200px;
+    margin: 20px;
+}
+
+.beanie-baby img {
+    width: 110px;
+}
